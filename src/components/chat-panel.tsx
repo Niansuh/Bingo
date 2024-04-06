@@ -116,10 +116,10 @@ export function ChatPanel({
           </div>
           <div className={cn('outside-left-container', { collapsed: focused })}>
             <div className="button-compose-wrapper">
-              <button className="body-2 button-compose" type="button" aria-label="New theme" onClick={resetConversation}>
+              <button className="body-2 button-compose" type="button" aria-label="New topic" onClick={resetConversation}>
                 <div className="button-compose-content">
                   <SVG className="pl-2" alt="new topic" src={NewTopic} width={40} fill="currentColor" />
-                  <div className="button-compose-text">New theme</div>
+                  <div className="button-compose-text">New topic</div>
                 </div>
               </button>
             </div>
