@@ -28,7 +28,7 @@ export function Settings() {
 
   useEffect(() => {
     if (isCopied) {
-      toast.success('复制成功')
+      toast.success('Copied successfully')
     }
   }, [isCopied])
 
@@ -39,7 +39,7 @@ export function Settings() {
         headerValue = atob(headerValue)
       } catch (e) { }
       if (!/^\s*curl ['"]https:\/\/www\.bing\.com\/turing\/captcha\/challenge['"]/.test(headerValue)) {
-        toast.error('用户信息格式不正确')
+        toast.error('User information format is incorrect')
         return
       }
       setImageOnly(checked)
@@ -56,20 +56,20 @@ export function Settings() {
       <Dialog open onOpenChange={() => setLoc('')} modal>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>设置你的用户信息</DialogTitle>
+            <DialogTitle>Set up your user information</DialogTitle>
             <DialogDescription>
-              请使用 Edge 浏览器
+              Please use Edge browser
               <ExternalLink
                 href="https://www.bing.com"
               >
-                打开并登录 Bing
+                Open and sign in to Bing
               </ExternalLink>
-              ，然后再打开
-              <ExternalLink href="https://www.bing.com/turing/captcha/challenge">Challenge 接口</ExternalLink>
-              右键 》检查。打开开发者工具，在网络里面找到 Challenge 接口 》右键复制》复制为 cURL(bash)，粘贴到此处，然后保存。
+              and then open it again
+              <ExternalLink href="https://www.bing.com/turing/captcha/challenge">Challenge interface</ExternalLink>
+              Right-click, check, open the developer tools, find the Challenge interface in the network, right-click and copy, copy as cURL (bash), paste here, and save
               <div className="h-2" />
-              图文示例：
-              <ExternalLink href="https://github.com/weaigc/bingo#如何获取-bing_header">如何获取 BING_HEADER</ExternalLink>
+              Graphic and text examples：
+              <ExternalLink href="https://raw.githubusercontent.com/Niansuh/Bingo/main/docs/images/curl.png">How to get BING_HEADER</ExternalLink>
             </DialogDescription>
           </DialogHeader>
           <div className="flex gap-4">
@@ -77,7 +77,7 @@ export function Settings() {
           </div>
           <Input
             value={curlValue}
-            placeholder="在此填写用户信息，格式: curl 'https://www.bing.com/turing/captcha/challenge' ..."
+            placeholder="Fill in user information here"
             onChange={e => {
               setCurlValue(e.target.value)
             }}
@@ -92,7 +92,7 @@ export function Settings() {
                 className={`${imageOnly ? 'translate-x-6' : 'translate-x-1'} inline-block h-4 w-4 transform rounded-full bg-white transition`}
               />
             </Switch>
-            身份信息仅用于画图（推荐开启）
+            Identity information is only used for drawing (recommended to turn on)
           </div>
 
           <div className="flex gap-2">
@@ -105,15 +105,15 @@ export function Settings() {
                 className={`${enabledHistory ? 'translate-x-6' : 'translate-x-1'} inline-block h-4 w-4 transform rounded-full bg-white transition`}
               />
             </Switch>
-            启用历史记录
+            Enable history
           </div>
 
           <Button variant="ghost" className="bg-[#F5F5F5] hover:bg-[#F2F2F2]" onClick={() => copyToClipboard(btoa(curlValue))}>
-            转成 BING_HEADER 并复制
+            Convert to BING_HEADER and copy
           </Button>
 
           <Button variant="ghost" className="bg-[#F5F5F5] hover:bg-[#F2F2F2]" onClick={() => copyToClipboard(parseHeadersFromCurl(curlValue).cookie)}>
-            获取 BING_COOKIE 并复制
+           Convert to BING_COOKIE and copy
           </Button>
 
           <DialogFooter className="items-center">
@@ -127,7 +127,7 @@ export function Settings() {
                     headerValue = atob(headerValue)
                   } catch (e) { }
                   if (!/^\s*curl ['"]https:\/\/(www|cn)\.bing\.com\/turing\/captcha\/challenge['"]/.test(headerValue)) {
-                    toast.error('用户信息格式不正确')
+                    toast.error('User information format is incorrect')
                     return
                   }
                   encodeHeadersToCookie(headerValue).forEach(cookie => setCookie(cookie))
@@ -136,14 +136,14 @@ export function Settings() {
                 }
                 setCookie('IMAGE_ONLY', RegExp.$1 === 'cn' || imageOnly || !headerValue ? '1' : '0')
 
-                toast.success('保存成功')
+                toast.success('Saved successfully')
                 setLoc('')
                 setTimeout(() => {
                   location.href = './'
                 }, 2000)
               }}
             >
-              保存
+              Keep
             </Button>
           </DialogFooter>
         </DialogContent>
@@ -158,14 +158,14 @@ export function Settings() {
             <Button
               variant="primary"
               onClick={() => {
-                toast.success('保存成功')
+                toast.success('Saved successfully')
                 setLoc('')
                 setTimeout(() => {
                   location.href = './'
                 }, 2000)
               }}
             >
-              保存
+              Keep
             </Button>
           </DialogFooter>
         </DialogContent>
