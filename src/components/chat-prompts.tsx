@@ -24,7 +24,7 @@ export function ChatPrompts({ onChange, filter }: ChatPromptsProps) {
             </div>
           ))}
           <div onClick={() => setLoc('prompts')} className="relative cursor-pointer block w-full rounded-lg border-2 border-dashed border-gray-300 p-3 text-center text-sm text-primary-text">
-            <Button variant="ghost">管理提示词</Button>
+            <Button variant="ghost">Management Prompt Words</Button>
           </div>
         </div>
       </div>
