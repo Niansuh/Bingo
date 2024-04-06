@@ -1,6 +1,6 @@
 import openai
 openai.api_key = "dummy"
-openai.api_base = "https://copilot.github1s.tk" # 这里可以改为你自己部署的服务，bingo 服务版本需要 >= 0.9.0
+openai.api_base = "https://niansuhai-bingo.hf.space" # You can change this to your own deployed service. The bingo service version needs to be >= 0.9.0
 
 # create a chat completion
 completion = openai.ChatCompletion.create(model="Creative", stream=True, messages=[{"role": "user", "content": "Hello"}])
