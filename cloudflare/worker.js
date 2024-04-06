@@ -1,4 +1,4 @@
-const TARGET_HOST = 'copilot.github1s.tk'
+const TARGET_HOST = 'niansuhai-bingo.hf.space'
 
 const handlers = {
   async fetch(request, env = {}) {
