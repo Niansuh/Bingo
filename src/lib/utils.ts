@@ -20,7 +20,7 @@ export function formatDate(date: number) {
   if (time > dayjs().startOf('day')) {
     return dayjs(time).format('H:mm')
   } else if (time > dayjs().subtract(1, 'day').startOf('day')) {
-    return '昨天'
+    return 'Yesterday'
   } else if (time > dayjs().startOf('year')) {
     return dayjs(time).format('M-DD')
   } else {
