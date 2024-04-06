@@ -2,13 +2,13 @@ import OpenAI from 'openai';
 
 const openai = new OpenAI({
   apiKey: 'dummy',
-  baseURL: 'http://127.0.0.1:3000' // 这里改成你自己部署的服务地址
+  baseURL: 'http://127.0.0.1:3000' // Change this to the service address you deployed yourself
 });
 
 async function start() {
   const completion = await openai.chat.completions.create({
     messages: [
-      { role: 'user', content: '你好' },
+      { role: 'user', content: 'Hello' },
     ],
     model: 'bing',
     stream: true,
