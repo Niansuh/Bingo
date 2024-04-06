@@ -7,7 +7,7 @@ import { BingReturnType } from '@/lib/hooks/use-bing'
 import { SVG } from './ui/svg'
 
 type Suggestions = SuggestedResponse[]
-const helpSuggestions = ['Why won't Bing respond to some topics?', 'Tell me more about Bing.', 'How does Bing use AI?'].map((text) => ({ text }))
+const helpSuggestions = ['Is my data private?', 'Tell me more about Bing.', 'How do I provide feedback?'].map((text) => ({ text }))
 const suggestionsAtom = atom<Suggestions>([])
 
 type ChatSuggestionsProps = React.ComponentProps<'div'> & Pick<BingReturnType, 'setInput'> & { suggestions?: Suggestions }
