@@ -82,11 +82,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         authFlag = true;
       } else {
         authFlag = false;
-        res.status(401).send('授权失败');
+        res.status(401).send('Authorization failed');
       }
     } else {
       authFlag = false;
-      res.status(401).send('缺少授权信息');
+      res.status(401).send('Missing authorization information');
     }
   } else {
     authFlag = true;
