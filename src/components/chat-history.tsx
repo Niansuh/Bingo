@@ -46,23 +46,23 @@ export function ConversationThead({ conversation, onRename, onDelete, onUpdate, 
         {!isEdit && (<h4 className="time">{formatDate(conversation.updateTimeUtc)}</h4>)}
         <div className="controls">
           {!isEdit ? (<>
-            <button className="edit icon-button" type="button" aria-label="重命名" onClick={() => setEdit(true)}>
+            <button className="edit icon-button" type="button" aria-label="Rename" onClick={() => setEdit(true)}>
               <IconEdit />
             </button>
 
-            <button className="delete icon-button" type="button" aria-label="删除" onClick={handleDelete}>
+            <button className="delete icon-button" type="button" aria-label="Delete" onClick={handleDelete}>
               <IconTrash />
             </button>
 
-            <button className="export icon-button" type="button" aria-label="导出" onClick={handleDownload}>
+            <button className="export icon-button" type="button" aria-label="Export" onClick={handleDownload}>
               <IconDownload />
             </button>
           </>) : (
             <>
-              <button className="edit icon-button" type="button" aria-label="保存" onClick={handleSave}>
+              <button className="edit icon-button" type="button" aria-label="Save" onClick={handleSave}>
                 <IconCheck />
               </button>
-              <button className="edit icon-button" type="button" aria-label="取消" onClick={() => setEdit(false)}>
+              <button className="edit icon-button" type="button" aria-label="Cancel" onClick={() => setEdit(false)}>
                 <IconClose />
               </button>
             </>
@@ -89,7 +89,7 @@ export function ChatHistory({ className, onExpaned }: { className?: string, onEx
   return chatHistory?.chats?.length ? (
     <div className={cn('chat-history right-4 z-50 fixed', className)}>
       <div className="chat-history-header text-sm font-semibold text-left px-4 pb-6">
-        历史记录
+        History Record
       </div>
 
       <div className="chat-history-main">
