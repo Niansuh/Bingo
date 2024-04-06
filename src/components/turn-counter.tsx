@@ -18,7 +18,7 @@ export function TurnCounter({ throttling, index }: TurnCounterProps) {
     <div className="turn-counter">
       <div className="text">
         <span>{unlimit ? Math.floor(index / 2) + 1 : throttling?.numUserMessagesInConversation}</span>
-        <span> 共 </span>
+        <span> of </span>
         <span>{unlimit ? '999' : throttling?.maxNumUserMessagesInConversation}</span>
       </div>
       <div className="indicator"></div>
