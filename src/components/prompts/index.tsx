@@ -23,7 +23,7 @@ export function PromptsManage (props: PromptDialogProps) {
       <Dialog open modal onOpenChange={() => setLoc('')}>
         <DialogContent className="flex flex-col max-h-full">
           <DialogHeader>
-            <DialogTitle>管理提示词</DialogTitle>
+            <DialogTitle>Management Prompt Words</DialogTitle>
           </DialogHeader>
           <Prompts insertPrompt={insertPrompt} />
         </DialogContent>
