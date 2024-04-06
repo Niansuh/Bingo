@@ -104,7 +104,7 @@ export function useChatHistory(historyEnabled: boolean) {
       msg.author === 'user' || msg.author === 'bot' && msg.text && !msg.messageType
     ).map((msg: ChatResponseMessage) => {
       return [
-        `##${msg.author === 'user' ? '用户' : '必应'}`,
+        `##${msg.author === 'user' ? 'User' : 'Must'}`,
         msg.author === 'user' ? msg.text : convertMessageToMarkdown(msg)
       ].join('\n')
     }).join('\n')
@@ -116,7 +116,7 @@ export function useChatHistory(historyEnabled: boolean) {
   }, [chatHistory])
 
   const updateMessage = useCallback(async (conversation: ChatConversation) => {
-    toast.loading('加载中', {
+    toast.loading('Loading', {
       duration: 0
     })
     const { conversationId, conversationSignature } = conversation
