@@ -2,67 +2,75 @@ import { ChatMessageModel } from "@/lib/bots/bing/types";
 
 export const initialMessages: ChatMessageModel[] = [
   { author: 'system', text: 'conversation between user and robot', id: '1' },
-  { author: 'user', text: '矩阵', id: 'jz' },
-  { author: 'bot', text:'矩阵的矩可以用行列式表示，对于一个n x n的矩阵A，其行列式记作|A|或det(A)。计算行列式的方法有多种，其中最常用的方法是高斯消元法和拉普拉斯展开法。因此，矩阵的矩可以用以下公式表示：\n\n$$\n|A| = det(A)\n$$\n\n希望这个回答能够帮到你。\n', id: 'xxx' },
-  { author: 'user', text: '销量最高的 3 种宠物吸尘器有哪些优点和缺点?  ', id: '2' },
- {
+  { author: 'user', text: 'Matrix', id: 'jz' },
+  {
+    author: 'bot', text: 'The determinant of a matrix can be represented using the determinant or det(A) for an n x n matrix A. There are various methods for calculating the determinant, with the most common being Gaussian elimination and Laplace expansion. Therefore, the determinant of a matrix can be expressed using the following formula:\n\n$$\n|A| = det(A)\n$$\n\nI hope this answer can help you.\n', id: 'xxx'
+  },
+  {
+    author: 'user', text: 'What are the advantages and disadvantages of the top 3 best-selling pet vacuum cleaners?', id: '2'
+  },
+  {
     author: 'bot', text: `
-您好，这是必应。根据网上的搜索结果，我为您找到了以下三款销量最高的宠物吸尘器，以及它们的优点和缺点：
+Hello, this is Bing. Based on online search results, I have found the following three best-selling pet vacuum cleaners and their advantages and disadvantages:
 
-- **戴森Dyson V10轻量版 Digital Slim Fluffy无线吸尘器**[^1^] [^3^]：这款吸尘器专为宠物家庭设计，拥有强大吸力和多功能吸头，能够有效清除宠物毛发和灰尘。
-  - 优点：轻便易用，续航时间长，过滤系统先进，能够有效去除过敏原；
-  - 缺点：价格较高，噪音较大，需要定期清洁滤网。
-- **飞利浦FC6908/82（W7）无线吸尘器**[^2^] [^4^]：这是一款手持式干吸无线吸尘器，专门为宠物家庭设计。它具有75分钟的超高续航，适合大户型；除螨涡轮刷，可以深度清洁床单被罩，免受螨虫侵害；吸拖一体设计，280ml大水箱，还可以往水箱里加入清洁剂。
-  - 优点：清洁性能强劲，操作方便，适用多种场景；
-  - 缺点：噪音较大，达到84dB（A）；尘杯容量较小，只有0.6L；充电时长较长，需要5小时。
-- **必胜（Bissell） 宠物吸尘器**[^2^]：这是一款便携式手持真空吸尘器，专为清理宠物毛发而设计。它配备特殊的橡胶喷嘴和软毛刷头，可以轻松拾取宠物毛发和灰尘；几乎静音运行。
-  - 优点：轻巧易用，重量只有1.36kg；电池可充电可更换；
-  - 缺点：续航时间不稳定，在15-30分钟之间浮动；吸力不够强劲，在地毯或沙发上可能效果不佳；没有过滤系统或过滤网。
+- **Dyson V10 Lightweight Digital Slim Fluffy Cordless Vacuum Cleaner** [^1^] [^3^]: This vacuum cleaner is designed for pet homes, featuring powerful suction and versatile nozzles to effectively remove pet hair and dust.
+  - Pros: Lightweight and easy to use, long battery life, advanced filtration system that effectively removes allergens.
+  - Cons: Higher price, noisy, requires regular cleaning of filters.
+- **Philips FC6908/82 (W7) Cordless Vacuum Cleaner** [^2^] [^4^]: This handheld dry suction cordless vacuum cleaner is designed for pet homes. It has a 75-minute ultra-long battery life, suitable for large households, and includes a mite turbine brush for deep cleaning of sheets and covers.
+  - Pros: Powerful cleaning performance, easy to operate, suitable for various scenarios.
+  - Cons: Loud noise (84dB(A)), small dust cup (0.6L), long charging time (5 hours).
+- **Bissell Pet Vacuum Cleaner** [^2^]: This portable handheld vacuum cleaner is designed for pet hair removal. It comes with special rubber nozzles and soft brush heads for easy removal of pet hair and dust; operates almost silently.
+  - Pros: Lightweight and easy to use (weight only 1.36kg), rechargeable and replaceable battery.
+  - Cons: Unstable battery life (between 15-30 minutes), not strong suction, may not be effective on carpets or sofas; lacks a filtration system or filter.
 
-希望这些信息对您有所帮助。如果您还有其他问题，请随时提问。😊
-  `, id: '3' },
-  { author: 'user', text: '今天的新闻', id: '4' },
+I hope this information is helpful. If you have any further questions, feel free to ask. 😊
+  `, id: '3'
+  },
+  { author: 'user', text: 'Today\'s news', id: '4' },
   {
-    author: 'bot', text: `你好，这是Bing。我根据你的搜索查询“今天的新闻”为你找到了以下信息：
+    author: 'bot', text: `Hello, this is Bing. Based on your search query for "Today's news," I have found the following information:
 
-  # 中国新闻
-  - 《求是》杂志发表习近平总书记重要文章《深化党和国家机构改革 推进国家治理体系和治理能力现代化》[^1^]
-  - 梦之队第5金！ 全红婵陈芋汐女双10米台夺冠[^1^]
-  - 中央气象台7月16日18时发布台风橙色预警[^1^]
-  - 贵州石阡：暑期旅游带动乡村振兴[^1^]
-  - 激活大科学装置的“人才红利”[^1^]
-  - 聚才用才留才 让希望的田野成为智慧的田野[^1^]
-  - 科学家发现粮食系统增效可有效支撑我国碳中和[^1^]
-  - 成都以赛为媒提升城市美誉度[^1^]
-  - 香江观澜：“抢人才”成效显著 香港竞争力依旧[^1^]
-  - 浙江建德：新安江上享清凉[^1^]
-  - 定向资金持续精准滴灌 高质量发展力量不断积累[^1^]
-  - 企业信心恢复加大中长期投资 为稳增长奠定基础[^1^]
-  - 武汉渡江节开赛 千名“泳士”竞渡长江[^1^]
-  - 金融更加重视对实体经济支持 降低融资成本提振市场信心[^1^]
-  - 大运来了丨成都迎大运 全民健身动起来[^1^]
-  - 藏在高校里的宝藏博物馆[^1^]
-  - 中国汽车工业用70年赢得三个“全球第一”[^1^]
-  - 辽宁阜新市委常委、副市长赖化平涉嫌严重违纪违法接受审查调查[^1^]
+  # Chinese News
+  - "Qiushi" magazine publishes an important article by General Secretary Xi Jinping on deepening party and state institution reforms to advance the modernization of the national governance system and capacity [^1^].
+  - The 5th gold for the Dream Team! Quan Hongchan and Chen Yuxi win the women's synchronized 10-meter platform [^1^].
+  - China Meteorological Administration issues an orange typhoon warning at 18:00 on July 16 [^1^].
+  - Shiqian, Guizhou: Summer tourism drives rural revitalization [^1^].
+  - Activating the "talent dividend" for large scientific facilities [^1^].
+  - Gathering, using, and retaining talents to make hopeful fields intelligent fields [^1^].
+  - Scientists discover that improving the efficiency of the grain system can effectively support China's carbon neutrality [^1^].
+  - Chengdu uses competitions to enhance urban reputation [^1^].
+  - Xiangjiang Guanlan: "Talent grabbing" is effective, and Hong Kong's competitiveness remains [^1^].
+  - Jiande, Zhejiang: Enjoying the coolness on the Xin'an River [^1^].
+  - Targeted funds continue to be accurately irrigated, accumulating strength for high-quality development [^1^].
+  - Enterprise confidence is recovering, increasing medium and long-term investment to lay the foundation for stable growth [^1^].
+  - Wuhan Crossing River Festival opens, a thousand "swimmers" compete in the Yangtze River [^1^].
+  - The financial sector pays more attention to supporting the real economy, reducing financing costs to boost market confidence [^1^].
+  - The Universiade is here! Chengdu welcomes the Universiade, and the whole people participate in fitness [^1^].
+  - Hidden treasures in universities: Museums [^1^].
+  - China's automotive industry wins three "global firsts" in 70 years [^1^].
+  - Lai Huaping, member of the Standing Committee of the Fuxin Municipal Party Committee and Deputy Mayor of Liaoning, is suspected of serious disciplinary violations and is under investigation [^1^].
 
-  # 国际新闻
-  - 联合国秘书长：可持续发展面临风险 各国需加强行动[^2^]
-  - 国际航运业加快绿色转型[^2^]
-  - 美企反对收紧对华芯片出口限制[^2^]
-  - 欧洲加大气候科技领域投资[^2^]
-  - 中企助力丹麦发展清洁能源[^2^]
-  - 中国代表呼吁国际社会共同努力防止乌克兰局势失控[^2^]
-  - 中国和阿尔及利亚共同构建新型国际关系典范[^2^]
+  # International News
+  - UN Secretary-General: Sustainable development faces risks, and countries need to strengthen action [^2^].
+  - International shipping industry accelerates green transformation [^2^].
+  - US companies oppose tightening export restrictions on chips to China [^2^].
+  - Europe increases investment in climate technology [^2^].
+  - Chinese enterprises help Denmark develop clean energy [^2^].
+  - China calls on the international community to work together to prevent the situation in Ukraine from getting out of control [^2^].
+  - China and Algeria jointly build a new model of international relations [^2^].
 
-  以上信息仅供参考，具体详情请点击以下链接查看：
+  The above information is for reference only. For specific details, please click on the following links:
 
-  [1] [中国新闻_央视网(cctv.com)](https://news.cctv.com/china/)
-  [2] [人民网_网上的人民日报](http://www.people.com.cn/)`, id: '5' },
-  { author: 'user', text: '写一个快排', id: '6' },
-  { author: 'bot', text: "你好，这是Bing。我可以帮你用python写一个快排。快速排序是一种基于分治思想的排序算法，它的基本思想是：从待排序的数组中选择一个基准元素，将数组分为两个子数组，使得左边的子数组中的元素都小于或等于基准元素，右边的子数组中的元素都大于或等于基准元素，然后对两个子数组递归地进行快速排序，最后合并结果。下面是用python实现的快速排序的代码：\n\n```python\n# 定义一个函数，用于交换数组中的两个元素\ndef swap(arr, i, j):\n    temp = arr[i]\n    arr[i] = arr[j]\n    arr[j] = temp\n\n# 定义一个函数，用于对数组的一段区间进行划分\ndef partition(arr, low, high):\n    # 选择最右边的元素作为基准元素\n    pivot = arr[high]\n    # 初始化一个指针，指向左边区间的最后一个位置\n    i = low - 1\n    # 遍历左边区间中的每个元素\n    for j in range(low, high):\n        # 如果当前元素小于或等于基准元素\n        if arr[j] <= pivot:\n            # 将指针右移一位\n            i += 1\n            # 将指针所指的元素与当前元素交换\n            swap(arr, i, j)\n    # 将基准元素与指针右边的第一个元素交换\n    swap(arr, i + 1, high)\n    # 返回基准元素的最终位置\n    return i + 1\n\n# 定义一个函数，用于对数组进行快速排序\ndef quick_sort(arr, low, high):\n    # 如果区间长度大于1\n    if low < high:\n        # 对区间进行划分，得到基准元素的位置\n        p = partition(arr, low, high)\n        # 对左边子区间进行快速排序\n        quick_sort(arr, low, p - 1)\n        # 对右边子区间进行快速排序\n        quick_sort(arr, p + 1, high)\n\n# 测试代码\narr = [5, 3, 7, 2, 9, 1, 4, 6, 8]\nprint(\"原始数组：\", arr)\nquick_sort(arr, 0, len(arr) - 1)\nprint(\"排序后的数组：\", arr)\n```", id: '7' },
+  [1] [Chinese News_CCTV Net](https://news.cctv.com/china/)
+  [2] [People's Daily Online](http://www.people.com.cn/)`, id: '5'
+  },
+  { author: 'user', text: 'Write a quicksort', id: '6' },
   {
-    author: 'bot', text: "好的，我会尝试画一只猫。\n > ![一只猫](https://tse2.mm.bing.net/th/id/OIG.jz34V0PNVkPC229h9spV?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn)![一只猫](https://tse1.mm.bing.net/th/id/OIG.6g7d.XLZMP_iwAByLhvo?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn)![一只猫](https://tse2.mm.bing.net/th/id/OIG.iAxF4ekekYn7sZw9SmU6?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn)![一只猫](https://tse4.mm.bing.net/th/id/OIG.qDnzeSKzUCeJcrBqc5mX?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn)",
+    author: 'bot', text: "Hello, this is Bing. I can help you write a quicksort in Python. Quicksort is a sorting algorithm based on the divide-and-conquer strategy. Its basic idea is to choose a pivot element from the array, partition the array into two subarrays such that elements on the left are smaller or equal to the pivot, and elements on the right are greater or equal to the pivot. Then, recursively apply quicksort to the two subarrays and merge the results. Here is the Python implementation of quicksort:\n\n```python\n# Define a function for swapping two elements in an array\ndef swap(arr, i, j):\n    temp = arr[i]\n    arr[i] = arr[j]\n    arr[j] = temp\n\n# Define a function for partitioning a segment of an array\ndef partition(arr, low, high):\n    # Choose the rightmost element as the pivot\n    pivot = arr[high]\n    # Initialize a pointer pointing to the last position in the left segment\n    i = low - 1\n    # Traverse each element in the left segment\n    for j in range(low, high):\n        # If the current element is less than or equal to the pivot\n        if arr[j] <= pivot:\n            # Move the pointer to the right\n            i += 1\n            # Swap the element at the pointer with the current element\n            swap(arr, i, j)\n    # Swap the pivot with the first element on the right of the pointer\n    swap(arr, i + 1, high)\n    # Return the final position of the pivot\n    return i + 1\n\n# Define a function for quicksort on an array\ndef quick_sort(arr, low, high):\n    # If the segment length is greater than 1\n    if low < high:\n        # Partition the segment and get the position of the pivot\n        p = partition(arr, low, high)\n        # Apply quicksort to the left subsegment\n        quick_sort(arr, low, p - 1)\n        # Apply quicksort to the right subsegment\n        quick_sort(arr, p + 1, high)\n\n# Test code\narr = [5, 3, 7, 2, 9, 1, 4, 6, 8]\nprint(\"Original array:\", arr)\nquick_sort(arr, 0, len(arr) - 1)\nprint(\"Sorted array:\", arr)\n```", id: '7'
+  },
+  {
+    author: 'bot', text: "Sure, I'll try to draw a cat.\n > ![Cat 1](https://tse2.mm.bing.net/th/id/OIG.jz34V0PNVkPC229h9spV?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn)![Cat 2](https://tse1.mm.bing.net/th/id/OIG.6g7d.XLZMP_iwAByLhvo?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn)![Cat 3](https://tse2.mm.bing.net/th/id/OIG.iAxF4ekekYn7sZw9SmU6?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn)![Cat 4](https://tse4.mm.bing.net/th/id/OIG.qDnzeSKzUCeJcrBqc5mX?w=270&h=270&c=6&r=0&o=5&dpr=1.5&pid=ImgGn)",
     id: '8',
-    suggestedResponses: [{ text: '建议一' }]
+    suggestedResponses: [{ text: 'Suggestion 1' }]
   }
-]
+];
