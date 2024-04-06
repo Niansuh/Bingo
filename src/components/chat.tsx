@@ -82,7 +82,7 @@ export default function Chat({ className }: ChatProps) {
                       className="typing-control-item stop"
                     >
                       <SVG alt="stop" src={StopIcon} width={24} className="mr-1" />
-                      <span>停止响应</span>
+                      <span>Stopped Responding</span>
                     </button>
                   </div>
                 ) : null}
