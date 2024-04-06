@@ -15,13 +15,13 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_USERNAME: hf4all
-          SPACE_NAME: bingo
+          HF_USERNAME: NiansuhAI
+          SPACE_NAME: Bingo
         run: |
           git clone https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$SPACE_NAME huggingface
           cd huggingface
           git config user.name hf4all
-          git config user.email hf4all@gmail.com
+          git config user.email niansuhtech@gmail.com
           echo "Last deploy time: $(date)" > DEPLOY_INFO.txt
           git add DEPLOY_INFO.txt
           git commit -m "auto deploy $(date)"
