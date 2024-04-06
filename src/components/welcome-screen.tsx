@@ -2,16 +2,16 @@ import { BingReturnType } from '@/lib/hooks/use-bing'
 
 const exampleMessages = [
   {
-    heading: '🧐 提出复杂问题',
-    message: `我可以为我挑剔的只吃橙色食物的孩子做什么饭?`
+    heading: '🧐 Ask Complex Questions',
+    message: `What can I cook for my picky kid who only eats orange foods?`
   },
   {
-    heading: '🙌 获取更好的答案',
-    message: '销量最高的 3 种宠物吸尘器有哪些优点和缺点?'
+    heading: '🙌 Get Better Answers',
+    message: 'What are the pros and cons of the top 3 best-selling pet vacuums?'
   },
   {
-    heading: '🎨 获得创意灵感',
-    message: `以海盗的口吻写一首关于外太空鳄鱼的俳句`
+    heading: '🎨 Get Creative Inspiration',
+    message: `Write a haiku in the voice of a pirate about a crocodile in outer space.`
   }
 ]
 
