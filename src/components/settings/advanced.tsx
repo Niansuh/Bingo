@@ -32,14 +32,14 @@ export function AdvancedSetting() {
   return (
     <>
       <DialogHeader>
-        <DialogTitle>高级设置</DialogTitle>
+        <DialogTitle>Advanced Settings</DialogTitle>
         <DialogDescription>
-          为 New Bing 添加一些实用的功能。
+          Add some useful features to New Bing.
         </DialogDescription>
       </DialogHeader>
 
       <div className="flex flex-col gap-2">
-        突破对话次数限制
+        Break through the conversation limit
         <Switch
           checked={enableUnlimit}
           className={`${enableUnlimit ? 'bg-blue-600' : 'bg-gray-200'} relative inline-flex h-6 w-11 items-center rounded-full`}
@@ -51,7 +51,7 @@ export function AdvancedSetting() {
         </Switch>
       </div>
       <div className="flex flex-col gap-2">
-        预设角色
+        Default role
         <div className="w-full py-1">
           <div className="mx-auto w-full">
             <RadioGroup value={selected} onChange={handleSwitchPrompt}>
@@ -85,8 +85,8 @@ export function AdvancedSetting() {
                                 as="span"
                                 className={`w-full ${checked ? 'text-sky-100' : 'text-gray-500'}`}
                               >
-                                {checked && prompt.label === '自定义' ?
-                                <Textarea placeholder="留空即为原始版本的 New Bing" onChange={(event) => handleChangePrompt(event.target.value)} value={systemPrompt || prompt.content} /> : <span>{prompt.desc}</span>
+                                {checked && prompt.label === 'Customize' ?
+                                <Textarea placeholder="Leave blank for original version New Bing" onChange={(event) => handleChangePrompt(event.target.value)} value={systemPrompt || prompt.content} /> : <span>{prompt.desc}</span>
                                 }
                               </RadioGroup.Description>
                             </div>
