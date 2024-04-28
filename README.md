@@ -1,6 +1,7 @@
 <div align="center">
 
-# Bingo 
+## Niansuh AI
+ # Bingo 
 
 Bingo, a New Bing that lets you breathe easy.
 
@@ -8,6 +9,8 @@ It highly restores the main operations of the New Bing web version, is available
 
 ![Github stars](https://badgen.net/github/stars/Niansuh/Bingo?icon=github&label=stars)
 ![Gthub issues](https://img.shields.io/github/issues/Niansuh/Bingo)
+[![docker build](https://github.com/Niansuh/Bingo/actions/workflows/docker.yml/badge.svg)](https://hub.docker.com/repository/docker/niansuh/bingo)
+[![docker hub](https://badgen.net/docker/size/niansuh/bingo?icon=docker&label=image%20size)](https://hub.docker.com/repository/docker/niansuh/bingo)
 [![MIT License](https://img.shields.io/badge/license-MIT-97c50f)](https://github.com/Niansuh/Bingo/blob/main/license)
 
 </div>
@@ -72,7 +75,7 @@ npm run start
 
 Open https://www.bing.com and log in, then visit https://www.bing.com/turing/captcha/challenge and pass the human-machine verification (if **Invalid Domain** is displayed, skip the verification test regardless), then
 
-![BING HEADER](./docs/images/curl.png)
+![BING HEADER](https://github.com/Niansuh/Bingo/raw/main/docs/images/curl.png)
 
 > The copied content should look like this. After confirming that the format is correct, open https://niansuhai-bingo.hf.space/#dialog=%22settings%22, paste it in, click "Convert to BING_HEADER and copy", and then paste it from the clipboard to get it. (You can also verify on the web page first)
 
@@ -125,7 +128,7 @@ Y3VybCAnaHR0cHM6Ly93d3cuYmluZy5jb20vdHVyaW5nL2NvbnZlcnNhdGlvbi9jcmVhdGUnIFwgICAt
 
 Open https://www.bing.com and log in, then visit https://www.bing.com/turing/captcha/challenge and pass the human-machine verification (if **Invalid Domain** is displayed, it means you need to prepare a ladder), then
 
-![BING_COOKIE](./docs/images/curl.png)
+![BING_COOKIE](https://github.com/Niansuh/Bingo/raw/main/docs/images/curl.png)
 
 > The copied content should look like this. After confirming that the format is correct, open https://niansuhai-bingo.hf.space/#dialog=%22settings%22, paste it in, click "Convert to BING_COOKIE and copy", and then paste it from the clipboard to get it. (You can also verify on the web page first)
 
