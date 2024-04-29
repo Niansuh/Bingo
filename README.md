@@ -134,11 +134,11 @@ Open https://www.bing.com and log in, then visit https://www.bing.com/turing/cap
 
 ## Star History
 
-<a href="https://star-history.com/#Niansuh/Bingo&Date">
+<a href="https://star-history.com/#niansuh/bingo&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Niansuh/Bingo&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Niansuh/Bingo&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Niansuh/Bingo&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=niansuh/bingo&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=niansuh/bingo&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=niansuh/bingo&type=Date" />
   </picture>
 </a>
 
