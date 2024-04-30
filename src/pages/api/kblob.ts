@@ -43,7 +43,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     )
 
     if (response.status !== 200) {
-      throw new Error('图片上传失败')
+      throw new Error('Image upload failed')
     }
     res.writeHead(200, {
       'Content-Type': 'application/json',
