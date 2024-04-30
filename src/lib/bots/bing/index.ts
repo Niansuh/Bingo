@@ -349,7 +349,7 @@ export class BingWebBot {
       unpackMessage: websocketUtils.unpackMessage,
       createWebSocket: (url) => new WebSocket(url, {
         headers: {
-          'accept-language': 'zh-CN,zh;q=0.9',
+          'accept-language': 'en-US,en;q=0.9',
           'cache-control': 'no-cache',
           "user-agent": "Mozilla/5.0 (Linux; Android 7.1.1; OPPO R11t) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Mobile Safari/537.36 EdgA/108.0.1462.4",
           pragma: 'no-cache',
