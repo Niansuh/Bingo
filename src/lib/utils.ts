@@ -175,7 +175,7 @@ export function mockUser(cookies: Partial<{ [key: string]: string }>) {
   return {
     'x-forwarded-for': BING_IP || randomIP(),
     'Accept-Encoding': 'gzip, deflate, br',
-    'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+    'Accept-Language': 'en-US,en;q=0.9,en-GB;q=0.8,en-US;q=0.7',
     'User-Agent': ua!,
     'x-ms-useragent': 'azsdk-js-api-client-factory/1.0.0-beta.1 core-rest-pipeline/1.12.3 OS/Android',
     'referer': 'https://www.bing.com/search?showconv=1&sendquery=1&q=Bing%20AI&form=MY02CJ&OCID=MY02CJ&OCID=MY02CJ&pl=launch',
