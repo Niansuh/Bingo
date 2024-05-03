@@ -16,7 +16,7 @@ app.prepare().then(() => {
       process.exit(1)
     })
     .listen(PORT, () => {
-      console.log(`> Ready on http://${hostname}:${PORT}`)
+      console.log(`> Ready on http://${hostname}:${PORT} (Made by NiansuhAI)`)
     })
 
   async function handleRequest(req, res) {
@@ -49,7 +49,7 @@ app.prepare().then(() => {
     } catch (err) {
       console.error('Error occurred handling', req.url, err)
       res.statusCode = 500
-      res.end('internal server error')
+      res.end('Internal Server Error')
     }
   }
 })
