@@ -5,7 +5,7 @@
 
 Bingo, a New Bing that lets you breathe easy.
 
-It highly restores the main operations of the New Bing web version, is available in China and Pakistan, is compatible with most Microsoft Bing AI functions, and can be deployed and used by yourself.
+It highly restores the main operations of the New Bing web version, is available in Worldwide, is compatible with most Microsoft Bing AI functions, and can be deployed and used by yourself.
 
 ![Github stars](https://badgen.net/github/stars/Niansuh/Bingo?icon=github&label=stars)
 ![Gthub issues](https://img.shields.io/github/issues/Niansuh/Bingo)
