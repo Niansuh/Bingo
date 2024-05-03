@@ -90,7 +90,7 @@ main();
 > For more instructions, please refer to https://github.com/openai/openai-node
 
 
-## 在线演示
+## Online demo
 
 1. https://huggingface.co/spaces/niansuhai/Bingo [![Deploy Chatbot UI](https://huggingface.co/datasets/huggingface/badges/resolve/main/deploy-on-spaces-sm.svg)](https://huggingface.co/login?next=%2Fspaces%2Fniansuhai%2FBingo%3Fduplicate%3Dtrue%26visibility%3Dpublic)
 2. https://huggingface.co/spaces/niansuhai/copilot
