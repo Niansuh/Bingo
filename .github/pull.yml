@@ -1,5 +1,5 @@
 version: "1"
 rules:
   - base: main
-    upstream: weaigc:main    # change `weaigc` to the owner of upstream repo
+    upstream: niansuh:main    # change `niansuh` to the owner of upstream repo
     mergeMethod: rebase
