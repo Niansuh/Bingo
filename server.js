@@ -16,7 +16,8 @@ app.prepare().then(() => {
       process.exit(1)
     })
     .listen(PORT, () => {
-      console.log(`> Ready on http://${hostname}:${PORT} (Made by NiansuhAI)`)
+      console.log(`> 💡 Ready on http://${hostname}:${PORT}`)
+      console.log(`> 📝 Made By: NiansuhAI`)
     })
 
   async function handleRequest(req, res) {
