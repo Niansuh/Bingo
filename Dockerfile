@@ -2,7 +2,7 @@ FROM node:20
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-# 如果没有特别需要不要配置
+# Do not configure it if there is no special need
 ENV BING_HEADER ""
 
 # Set home to the user's home directory
