@@ -1,8 +1,8 @@
 {
-  // These tasks will run in order when initializing your CodeSandbox project.
+// The following tasks will execute sequentially during the initialization of your CodeSandbox project.
   "setupTasks": [],
 
-  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  // These tasks are executable within CodeSandbox. Executing one will display a log within the application.
   "tasks": {
     "dev": {
       "name": "Start Server",
