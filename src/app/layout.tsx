@@ -30,7 +30,6 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "35b69b5e3f19425ea26a8e785abda0f7"}'></script><!-- End Cloudflare Web Analytics -->
       <body>
         <Toaster />
         <Providers attribute="class" defaultTheme="system" enableSystem>
