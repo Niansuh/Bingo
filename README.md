@@ -47,7 +47,7 @@ Site (V1): https://niansuhai-bingo.hf.space
  - [x] Support Workers deployment
  - [x] Supports OpenAI API
  - [x] Support GPT4 mode
- - [ ] International translation
+ - [x] International translation
 
 ## Environment and dependencies
 
