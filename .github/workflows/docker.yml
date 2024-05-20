@@ -40,7 +40,9 @@ jobs:
           images: niansuh/bingo
           tags: |
             type=raw,value=latest
-            type=raw,value=v1.4.0
+            type=raw,value=v1.0.7
+          labels: |
+            maintainer=niansuh
           
       - name: Build and push
         uses: docker/build-push-action@v4
