@@ -27,7 +27,7 @@ Site (V1): https://niansuhai-bingo.hf.space
 - Cookies can be configured globally and shared globally
 - Support continuous voice conversation
 - Support account-free use
-- completely free
+- Completely free
 - Support OpenAI method calling [Usage Document](./OPENAI.md)
 - Support independent deployment
 
