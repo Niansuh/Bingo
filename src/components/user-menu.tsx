@@ -89,12 +89,6 @@ export function UserMenu() {
             <div className="font-medium" onClick={() => installPrompt.prompt?.()}>Install Bing To Your Desktop</div>
           </DropdownMenuItem>}
           <DropdownMenuSeparator />
-          <DropdownMenuItem className="flex-col items-start">
-            <div className="font-medium">Site Domain Name</div>
-            <div onClick={() => copyToClipboard(host)} className="flex gap-1 text-xs text-zinc-500 cursor-pointer">
-              {host} <IconCopy />
-            </div>
-          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
