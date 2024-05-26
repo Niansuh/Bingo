@@ -69,7 +69,7 @@ export function Settings() {
               Right-click, check, open the developer tools, find the Challenge interface in the network, right-click and copy, copy as cURL (bash), paste here, and save
               <div className="h-2" />
               Graphic and text examples：
-              <ExternalLink href="https://raw.githubusercontent.com/Niansuh/Bingo/main/docs/images/curl.png">How to get BING_HEADER</ExternalLink>
+              <ExternalLink href="https://cdn-uploads.huggingface.co/production/uploads/64cba00d710645aa7b04f281/T9vm3OsnkHgzr9VrOWpCr.png">How to get BING_HEADER</ExternalLink>
             </DialogDescription>
           </DialogHeader>
           <div className="flex gap-4">
