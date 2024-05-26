@@ -213,7 +213,7 @@ export class BingWebBot {
     }
 
     if (!resp?.result) {
-      throw new ChatError('Your VPS or proxy may be banned. If you have any questions, please go to https://github.com/Niansuh/Bingo for consultation', ErrorCode.BING_IP_FORBIDDEN)
+      throw new ChatError('Your VPS or proxy may be banned.', ErrorCode.BING_IP_FORBIDDEN)
     }
 
     const { value, message } = resp.result || {}
