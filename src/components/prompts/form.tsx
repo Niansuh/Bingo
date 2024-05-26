@@ -170,17 +170,6 @@ function CommunityPrompts(props: { insertPrompt: (text: string) => void }) {
           />
         )) : <PulseLoader size={10} className="mt-5" color="var(--cib-color-fill-accent-gradient-primary)" />}
       </div>
-      <span className="text-sm mt-5 block text-primary-text">
-        Prompt Word Contribution Address: 
-        <a
-          href="https://github.com/Niansuh/Bingo"
-          target="_blank"
-          rel="noreferrer"
-          className="underline"
-        >
-          GitHub
-        </a>
-      </span>
     </>
   )
 }
