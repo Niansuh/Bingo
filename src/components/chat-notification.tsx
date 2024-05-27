@@ -19,7 +19,7 @@ function getAction(error: ChatError, reset: () => void) {
   }
   if (error.code === ErrorCode.BING_IP_FORBIDDEN) {
     return (
-      <ExternalLink href="https://github.com/Niansuh/Bingo/issues">
+      <ExternalLink href="mailto:niansuhtech@gmail.com">
         Your server or proxy has been banned, please change the server or use a proxy to try again
       </ExternalLink>
     )
