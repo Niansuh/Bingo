@@ -80,6 +80,18 @@ export function UserMenu() {
           >
             Prompt Word Management
           </DropdownMenuItem>
+          <DropdownMenuItem asChild>
+            <a
+              href="https://chatgptbots.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-between w-full gap-2 cursor-pointer"
+            >
+              Site URL
+              <IconGitHub />
+              <IconExternalLink className="w-3 h-3 ml-auto" />
+            </a>
+          </DropdownMenuItem>
           <DropdownMenuSeparator />
           <DropdownMenuItem className="flex-col items-start">
             <div className="font-medium">Version Information {pkg.version}</div>
