@@ -118,7 +118,7 @@ export class BingWebBot {
           "CountryName": "Pakistan",
           "CountryConfidence": 9,
           "PopulatedPlaceConfidence": 0,
-          "UtcOffset": 8,
+          "UtcOffset": 5,
           "Dma": 0
         }
       ],
