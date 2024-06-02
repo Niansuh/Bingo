@@ -108,8 +108,8 @@ export class BingWebBot {
           "SourceType": 1,
           "RegionType": 2,
           "Center": {
-            "Latitude": 30.3753,
-            "Longitude": 69.3451,
+            "Latitude": 30.151530,
+            "Longitude": 72.602834,
           },
           "Radius": 24902,
           "Name": "Pakistan",
