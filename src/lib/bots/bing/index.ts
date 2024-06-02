@@ -100,8 +100,8 @@ export class BingWebBot {
     const uuid = randomUUID()
     const useBaseSets = (conversation.context?.length ?? 0) > 0
     const message = {
-      locale: 'en',
-      market: 'en',
+      locale: 'en-US',
+      market: 'en-US',
       region: 'PK',
       locationHints: [
         {
