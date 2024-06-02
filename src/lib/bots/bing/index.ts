@@ -102,23 +102,23 @@ export class BingWebBot {
     const message = {
       locale: 'en-US',
       market: 'en-US',
-      region: 'PK',
+      region: 'US',
       locationHints: [
         {
           "SourceType": 1,
           "RegionType": 2,
           "Center": {
-            "Latitude": 30.151530,
-            "Longitude": 72.602834,
+            "Latitude": 34.0536909,
+            "Longitude": -118.242766,
           },
           "Radius": 24902,
-          "Name": "Pakistan",
+          "Name": "United States",
           "Accuracy": 24902,
           "FDConfidence": 0,
-          "CountryName": "Pakistan",
+          "CountryName": "United States",
           "CountryConfidence": 9,
           "PopulatedPlaceConfidence": 0,
-          "UtcOffset": 5,
+          "UtcOffset": 8,
           "Dma": 0
         }
       ],
