@@ -22,7 +22,7 @@ export function ToneSelector({ type, onChange }: ToneSelectorProps) {
   return (
     <div className="fieldset">
       <div className="legend">
-        Выберите стиль разговора
+        Choose a conversation style
       </div>
       <div className="options-list-container">
         <ul id="tone-options" className="options">
@@ -30,7 +30,7 @@ export function ToneSelector({ type, onChange }: ToneSelectorProps) {
             ToneList.map(tone => (
               <li className="option" key={tone.name} onClick={() => onChange?.(tone.type)}>
                 <button className={cn(`tone-${type.toLowerCase()}`, { selected: tone.type === type}) } aria-pressed="true" >
-                  <span className="caption-2-strong label-modifier">Более</span>
+                  <span className="caption-2-strong label-modifier">More</span>
                   <span className="body-1-strong label">{tone.name}</span>
                 </button>
               </li>
