@@ -1,20 +1,21 @@
-name: Build Docker Image Release
+name: Build Docker Image
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
   push:
+    branches:
+      - main
+
 jobs:
   docker:
     runs-on: ubuntu-latest
-    if: github.actor == 'Happy-clo'
     steps:
-      - name: Checkout
+      -
+        name: Checkout
         uses: actions/checkout@v3
-      - name: Use Node.js
+      - name: Use Node.js 18
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 18
       - run: |
           npm install
           npm run build
@@ -22,31 +23,17 @@ jobs:
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
-      - name: Login to Docker Hub
-        uses: docker/login-action@v2
+      -
+        name: Login to Docker Hub
+        uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-      - name: Build and push
-        if: "github.event_name != 'pull_request'"
+      -
+        name: Build and push
         uses: docker/build-push-action@v4
         with:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: happyclo/bing:latest
-      - name: Push to hub
-        if: "github.event_name != 'pull_request'"
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_USERNAME: Niansuh
-          SPACE_NAME: Bingo
-        run: |
-          git clone https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$SPACE_NAME huggingface
-          cd huggingface
-          git config user.name Niansuh
-          git config user.email niansuhtech@gmail.com
-          echo "Last deploy time: $(date)" > DEPLOY_DATE.txt
-          git add DEPLOY_DATE.txt
-          git commit -am "auto deploy $(date)"
-          git push https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$SPACE_NAME main -f
+          tags: biansuh/bingo:latest
