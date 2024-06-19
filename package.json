@@ -47,7 +47,7 @@
     "next": "13.4.19",
     "next-auth": "^4.24.7",
     "next-themes": "^0.3.0",
-    "nextjs-cors": "^2.2.0",
+    "nextjs-cors": "^2.1.2",
     "node-imei": "^1.0.8",
     "postcss": "8.4.29",
     "random-ip": "^0.0.1",
