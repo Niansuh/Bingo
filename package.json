@@ -38,7 +38,7 @@
     "jotai": "^2.4.1",
     "jotai-immer": "^0.2.0",
     "jotai-location": "^0.5.1",
-    "js-base64": "^3.7.5",
+    "js-base64": "^3.7.7",
     "lodash": "^4.17.21",
     "md5": "^2.3.0",
     "miniflare": "^2.14.1",
