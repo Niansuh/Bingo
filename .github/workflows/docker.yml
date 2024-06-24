@@ -36,4 +36,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: weaigc/bingo:latest
+          tags: niansuh/bingo:latest
