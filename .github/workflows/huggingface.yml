@@ -20,7 +20,7 @@ jobs:
         run: |
           git clone https://$HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/$HF_USERNAME/$SPACE_NAME huggingface
           cd huggingface
-          git config user.name hf4all
+          git config user.name Niansuh
           git config user.email niansuhtech@gmail.com
           echo "Last deploy time: $(date)" > DEPLOY_INFO.txt
           git add DEPLOY_INFO.txt
