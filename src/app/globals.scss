@@ -1212,13 +1212,11 @@ button {
   transition-delay: var(--cib-motion-duration-normal);
   transition-timing-function: var(--cib-motion-easing-transition);
 
-  .button-compose-wrapper {
-    transition-property: opacity, transform;
-    transition-duration: var(--cib-motion-duration-fast);
-    transition-timing-function: var(--cib-motion-easing-in);
-  }
+ .button-compose-wrapper {
+    /* Removed transition properties */
+}
 
-  .button-compose {
+.button-compose {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -1234,9 +1232,8 @@ button {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
-    transition-property: width, opacity;
-    transition-duration: var(--cib-motion-duration-normal);
-    transition-timing-function: var(--cib-motion-easing-in);
+    /* Removed transition properties */
+}
 
     &:not([disabled]) {
       pointer-events: auto;
