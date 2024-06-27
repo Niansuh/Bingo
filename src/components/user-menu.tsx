@@ -82,7 +82,7 @@ export function UserMenu() {
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <a
-              href="https://chatgptbots.net"
+              href="https://typegpt.net"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-between w-full gap-2 cursor-pointer"
