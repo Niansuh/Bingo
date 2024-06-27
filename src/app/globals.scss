@@ -1223,7 +1223,7 @@ button {
     flex-direction: row;
     position: relative;
     height: 48px;
-    --button-compose-expanded-width: 100px; 
+    width: var(--button-compose-expanded-width);
     font-family: var(--cib-font-text);
     border-radius: var(--cib-border-radius-circular);
     color: var(--cib-color-foreground-on-accent-primary);
