@@ -17,7 +17,7 @@ It highly restores the main operations of the New Bing web version, is available
 
 ## Demo site
 
-Site (V1): [Bingo](https://gem-bingo.hf.space)
+Site (V1): [Bingo](https://gem-v1.hf.space)
 
 ## Functions and features
 
