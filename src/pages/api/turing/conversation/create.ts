@@ -1,6 +1,6 @@
 export const runtime = 'edge'
 
-const API_ENDPOINT = 'https://www.bing.com/turing/conversation/create'
+const API_ENDPOINT = 'https://edgeservices.bing.com/edgesvc/turing/conversation/create'
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url)
