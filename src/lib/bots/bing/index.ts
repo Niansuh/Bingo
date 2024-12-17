@@ -193,7 +193,7 @@ export class BingWebBot {
   async createConversation(conversationId?: string): Promise<ConversationResponse> {
     const headers = {
       'Accept-Encoding': 'gzip, deflate, br, zsdch',
-      'x-ms-useragent': 'azsdk-js-api-client-factory/1.0.0-beta.1 core-rest-pipeline/1.15.1 OS/Android',
+      'x-ms-useragent': 'azsdk-js-api-client-factory/1.0.0-beta.1 core-rest-pipeline/1.16.0 OS/Windows',
       cookie: this.cookie,
     }
 
@@ -351,7 +351,7 @@ export class BingWebBot {
         headers: {
           'accept-language': 'en-US,en;q=0.9',
           'cache-control': 'no-cache',
-          "user-agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36 Edg/127.0.0.0",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
           pragma: 'no-cache',
           cookie: this.cookie,
         }
@@ -371,7 +371,7 @@ export class BingWebBot {
   private async createImage(prompt: string, id: string) {
     const headers = {
       'Accept-Encoding': 'gzip, deflate, br, zsdch',
-      'x-ms-useragent': 'azsdk-js-api-client-factory/1.0.0-beta.1 core-rest-pipeline/1.15.1 OS/Android',
+      'x-ms-useragent': 'azsdk-js-api-client-factory/1.0.0-beta.1 core-rest-pipeline/1.16.0 OS/Windows',
       cookie: this.cookie,
     }
 
