@@ -14,7 +14,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     })
     headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0"
     do {
-      const endpoints = [req.headers['x-endpoint'], ...(process.env.ENDPOINT || '').split(','), 'www.bing.com'].filter(Boolean)
+      const endpoints = [req.headers['x-endpoint'], ...(process.env.ENDPOINT || '').split(','), 'edgeservices.bing.com'].filter(Boolean)
       const endpoint = endpoints[count % endpoints.length]
       const { conversationId } = req.query
       const query = new URLSearchParams({
@@ -25,9 +25,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       }
 
       debug(`try ${count+1}`, endpoint, headers['x-forwarded-for'])
-      const response = await fetch(`https://${endpoint || 'www.bing.com'}/turing/conversation/create?${query}`, { method: 'GET', headers })
+      const response = await fetch(`https://${endpoint || 'edgeservices.bing.com'}/edgesvc/turing/conversation/create?${query}`, { method: 'GET', headers })
         .catch(e => {
-          if (endpoint === 'www.bing.com') {
+          if (endpoint === 'edgeservices.bing.com') {
             throw e
           }
           return e
