@@ -1,6 +1,5 @@
 <div align="center">
 
-## Niansuh AI
  # Bingo 
 
 Bingo, a New Bing that lets you breathe easy.
